@@ -57,13 +57,13 @@ SetTitleMatchMode, 2
         else
             Run %A_ProgramFiles%\Mozilla Firefox\firefox.exe
     }
-    else if x = l        ;;Lotus Notes, (Ctrl-Shift-W, l)
-    {
-        IfWinExist Lotus Notes ahk_class SWT_Window0
-            WinActivate
-        else
-            Run C:\Lotus\Notes\nlnotes.exe
-    }
+;;    else if x = l        ;;Lotus Notes, (Ctrl-Shift-W, l)
+;;    {
+;;        IfWinExist Lotus Notes ahk_class SWT_Window0
+;;            WinActivate
+;;        else
+;;            Run C:\Lotus\Notes\nlnotes.exe
+;;    }
     else if x = n        ;;Notepad++ (Ctrl-Shift-W, n)
     {
         IfWinExist Notepad++ ahk_class Notepad++
@@ -71,60 +71,60 @@ SetTitleMatchMode, 2
         else
             Run %A_ProgramFiles%\Notepad++\notepad++.exe
     }
-    else if x = o        ;;Test command
-    {
-        WinGetTitle, outVar, A
-        Msgbox, %outVar%
-    }
-    else if x = p        ;;PAS4000 (Ctrl-Shift-W, p)
-    {
-        IfWinExist PAS4000 ahk_class SWT_Window0
-            WinActivate
-        else
-            Run %A_ProgramFiles%\Pilz\PAS4000 1.7.0\PAS4000.exe
-    }
-    else if x = q
-    {
-        IfWinExist HP Quality Center 9.2 ahk_class TMainForm
-            WinActivate
-        else
-            Run %A_ProgramFiles%\Common Files\HP\QCExplorer\QCExplorer.exe
-
-    }
+;;    else if x = o        ;;Test command
+;;    {
+;;        WinGetTitle, outVar, A
+;;        Msgbox, %outVar%
+;;    }
+;;    else if x = p        ;;PAS4000 (Ctrl-Shift-W, p)
+;;    {
+;;        IfWinExist PAS4000 ahk_class SWT_Window0
+;;            WinActivate
+;;        else
+;;            Run %A_ProgramFiles%\Pilz\PAS4000 1.7.0\PAS4000.exe
+;;    }
+;;    else if x = q
+;;    {
+;;        IfWinExist HP Quality Center 9.2 ahk_class TMainForm
+;;            WinActivate
+;;        else
+;;            Run %A_ProgramFiles%\Common Files\HP\QCExplorer\QCExplorer.exe
+;;
+;;    }
     else if x = r        ;;Launch cmd prompt (Ctrl-Shift-W, r)
     {
         Run %comspec%       
     }
-    else if x = t        ;;Launch TeamViewer (Ctrl-Shift-W, t)
-    {
-        IfWinExist TeamViewer ahk_class #32770    ;;Arbitrary WIN_CLASS name?
-            WinActivate
-        else
-            Run %A_ProgramFiles%\TeamViewer\Version7\TeamViewer.exe
-
-    }
-    else if x = v        ;;Launch UltraVnc (Ctrl-Shift-W, v)
-    {
-        ;Window title dependant on connected machine
-        IfWinExist ahk_class VNCMDI_Window
-            WinActivateBottom ahk_class VNCMDI_Window
-        else
-            Run %A_ProgramFiles%\uvnc bvba\UltraVnc\vncviewer.exe
-    }
-    else if x = w        ;;Launch Winamp (Ctrl-Shift-W, w)
-    {
-        IfWinExist Winamp ahk_class  BaseWindow_RootWnd
-            WinActivate
-        else
-            Run %A_ProgramFiles%\Winamp\winamp.exe
-    }
-    else if x = x        ;;xplorer (Ctrl-Shift-W, x)
-    {
-        IfWinExist xplorer ahk_class ATL:ExplorerFrame
-            WinActivate
-        else
-            Run %A_ProgramFiles%\xplorer2\xplorer2_lite.exe
-    }
+;;    else if x = t        ;;Launch TeamViewer (Ctrl-Shift-W, t)
+;;    {
+;;        IfWinExist TeamViewer ahk_class #32770    ;;Arbitrary WIN_CLASS name?
+;;            WinActivate
+;;        else
+;;            Run %A_ProgramFiles%\TeamViewer\Version7\TeamViewer.exe
+;;
+;;    }
+;;    else if x = v        ;;Launch UltraVnc (Ctrl-Shift-W, v)
+;;    {
+;;        ;Window title dependant on connected machine
+;;        IfWinExist ahk_class VNCMDI_Window
+;;            WinActivateBottom ahk_class VNCMDI_Window
+;;        else
+;;            Run %A_ProgramFiles%\uvnc bvba\UltraVnc\vncviewer.exe
+;;    }
+;;    else if x = w        ;;Launch Winamp (Ctrl-Shift-W, w)
+;;    {
+;;        IfWinExist Winamp ahk_class  BaseWindow_RootWnd
+;;            WinActivate
+;;        else
+;;            Run %A_ProgramFiles%\Winamp\winamp.exe
+;;    }
+;;    else if x = x        ;;xplorer (Ctrl-Shift-W, x)
+;;    {
+;;        IfWinExist xplorer ahk_class ATL:ExplorerFrame
+;;            WinActivate
+;;        else
+;;            Run %A_ProgramFiles%\xplorer2\xplorer2_lite.exe
+;;    }
 
 
 /*

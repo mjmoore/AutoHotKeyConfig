@@ -37,10 +37,10 @@ SetTitleMatchMode, 2
     }
     else if x = c
     {
-        IfWinExist Console2 ahk_class Console_2_Main
+        IfWinExist ahk_class VirtualConsoleClass
             WinActivate
         else
-            Run %A_ProgramFiles%\Console2\Console.exe
+            Run ConEmu64.exe
     }
     else if x = e        ;;Eclipse, bottom-most (Ctrl-Shift-W, n)
     {   

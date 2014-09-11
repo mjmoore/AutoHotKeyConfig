@@ -50,10 +50,10 @@ SetTitleMatchMode, 2
             Run C:\eclipse-indigo\eclipse.exe
        
     }
-    else if x = f
+    else if x = f	;;Firefox, bottom-most (Ctrl-Shift-W, f)
     {
         IfWinExist Mozilla Firefox ahk_class MozillaWindowClass
-            WinActivate
+            WinActivateBottom Mozilla
         else
             Run %A_ProgramFiles%\Mozilla Firefox\firefox.exe
     }

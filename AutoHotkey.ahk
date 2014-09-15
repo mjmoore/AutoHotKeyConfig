@@ -47,7 +47,7 @@ SetTitleMatchMode, 2
         IfWinExist Eclipse ahk_class SWT_Window0
             WinActivateBottom Eclipse
         else
-            Run C:\eclipse-indigo\eclipse.exe
+            Run C:\eclipse\eclipse.exe
        
     }
     else if x = f	;;Firefox, bottom-most (Ctrl-Shift-W, f)

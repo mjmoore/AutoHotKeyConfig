@@ -95,6 +95,13 @@ SetTitleMatchMode, 2
     {
         Run %comspec%       
     }
+    else if x = s       ;;Launch sublime text 3 (Ctrl-Shift-W, s)
+    {
+        ifWinExist ahk_class PX_WINDOW_CLASS
+            WinActivate
+        else
+            Run C:\Program Files\Sublime Text 3\sublime_text.exe
+    }
 ;;    else if x = t        ;;Launch TeamViewer (Ctrl-Shift-W, t)
 ;;    {
 ;;        IfWinExist TeamViewer ahk_class #32770    ;;Arbitrary WIN_CLASS name?

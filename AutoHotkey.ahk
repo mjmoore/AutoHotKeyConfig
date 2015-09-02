@@ -40,14 +40,14 @@ SetTitleMatchMode, 2
         IfWinExist ahk_class VirtualConsoleClass
             WinActivate
         else
-            Run ConEmu64.exe
+            Run C:\ide\ConEmuPack.150319\ConEmu64.exe
     }
     else if x = e        ;;Eclipse, bottom-most (Ctrl-Shift-W, n)
     {   
         IfWinExist Eclipse ahk_class SWT_Window0
             WinActivateBottom Eclipse
         else
-            Run C:\eclipse\eclipse.exe
+            Run C:\ide\eclipse\eclipse.exe
        
     }
     else if x = f	;;Firefox, bottom-most (Ctrl-Shift-W, f)
@@ -100,7 +100,7 @@ SetTitleMatchMode, 2
         ifWinExist ahk_class PX_WINDOW_CLASS
             WinActivate
         else
-            Run C:\Program Files\Sublime Text 3\sublime_text.exe
+            Run C:\ide\SublimeText3\sublime_text.exe
     }
 ;;    else if x = t        ;;Launch TeamViewer (Ctrl-Shift-W, t)
 ;;    {
